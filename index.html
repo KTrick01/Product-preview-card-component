@@ -17,7 +17,12 @@
 <body>
   <main class="main">
 
-    <img src="images/image-product-desktop.jpg" class="product__img" alt="">
+    <picture class="product__img containerImg">
+
+      <source srcset="images/image-product-mobile.jpg" media="(max-width: 600px)" class="product__img">
+      <img src="images/image-product-desktop.jpg" class="product__img" alt="">
+    </picture>
+    
 
     <article class="product">
       <p class="product__type">PERFUME</p>
